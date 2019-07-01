@@ -2,14 +2,172 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Comparison</title>
-	
+
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
 	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your comparison interface here -->
+	<br>
+	<div class=container-fluid>
+
+		<div class="row">
+    <div class="input-group">
+      <div class="col-4">
+      </div>
+      <div class="col-3">
+        <input type="text" class="form-control" placeholder="Enter location">
+      </div>
+      <div class="col-1">
+        <img src="/static/weather/assets/search-icon.png" alt="search icon" height=38px>
+      </div>
+      <div class="col-4">
+      </div>
+    </div>
+  </div>
+		
+		<div class="row">
+			<div class="col-4">
+			</div>
+			<div class="col-2">
+				<h4 class="time"> 12:00 PM </h4>
+			</div>
+			<div class="col-2">
+				<h4 class="day"> Thursday </h4>
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-4">
+			</div>
+			<div class="col-1">
+				<h2 class="temp"> 15 C</h2>
+				<div class="row">
+					<h4><strong>H</strong>: 20 C</h4>
+				</div>
+			</div>
+			<div class="col-1">
+				<h2 class="location"> BERKELEY </h2>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-1">
+				<img src="/static/weather/assets/sunny.png" alt="icon wrt temperature" height=33px>
+				<div class="row">
+					<h4><strong>L</strong>: 13 C</h4>
+				</div>
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-4">
+			</div>
+			<div class="col-1">
+				<h2 class="temp"> 13 C</h2>
+				<div class="row">
+					<h4><strong>H</strong>: 17 C</h4>
+				</div>
+			</div>
+			<div class="col-1">
+				<h2 class="location"> SAN FRANCISCO </h2>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-1">
+				<img src="/static/weather/assets/clouds.png" alt="icon wrt temperature" height=33px width=35px>
+				<div class="row">
+					<h4><strong>L</strong>: 10 C</h4>
+				</div>
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+
+		<br>
+
+		<div class="row">
+			<div class="col-4">
+			</div>
+			<div class="col-1">
+				<h2 class="temp"> 10 C</h2>
+				<div class="row">
+					<h4><strong>H</strong>: 15 C</h4>
+				</div>
+			</div>
+			<div class="col-1">
+				<h2 class="location"> SANTA CRUZ </h2>
+			</div>
+			<div class="col-1">
+				<a href="/weather/forecast/alert/">
+			<img src="/static/weather/assets/warning-icon.png" height=40px>
+			</a>
+			</div>
+			<div class="col-1">
+				<img src="/static/weather/assets/rain-icon.jpg" alt="icon wrt temperature" height=33px>
+				<div class="row">
+					<h4><strong>L</strong>: 09 C</h4>
+				</div>
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+
+		<br><br><br>
+
+
+		<div class="row">
+			<div class="col-4">
+			</div>
+			<div class="col-1">
+				<img src="/static/weather/assets/add-icon.png" height=39px>
+			</div>
+			<div class="col-2">
+				<div class="btn-group btn-group-toggle" data-toggle="buttons">
+					<label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> celsius
+      </label>
+					<label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> fahrenheit
+      </label>
+				</div>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+
+		<br> <br>
+		<div class="row">
+			<div class="col-4">
+			</div>
+			<div class="col-1">
+				<img class="warning-icon" src="/static/weather/assets/back-button.png" height=35px>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-1">
+				<img class="warning-icon" src="/static/weather/assets/home-button.png" height=40px>
+			</div>
+			<div class="col-1">
+			</div>
+			<div class="col-4">
+			</div>
+		</div>
+
+
+
+	</div>
 </body>
+
 </html>
